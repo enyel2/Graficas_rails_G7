@@ -1,0 +1,15 @@
+<h1> Nuestro Primer Grafico </h1>
+
+<%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
+
+
+<div class="row">
+	<div class="col-md-6">
+		<%= pie_chart @categories %>
+	</div>
+	<div class="col-md-6">
+		<%= line_chart @products_by_day %>
+	</div>
+	<div class="col-md-6">
+		<%= column_chart @products_sold  %>
+	</div>
